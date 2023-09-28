@@ -14,9 +14,22 @@
 header{
     position: sticky;
     top: 0;
+    z-index: 100;
+}
+
+
+.navbar-brand img{
+    width: 180px;
+    height: 180px;
+}
+
+.litems a{
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
 }
 header h1{
-    font-size: 70px;
+    font-size: 90px;
     text-align: center;
     }
 
@@ -42,12 +55,13 @@ header h1{
     src: url(../fonts/amsterdam-four-ttf.ttf);
 }
 
-header h1{
-    font-family: "amsterdam four";
+.hero h1{
+    font-size: 70px;
+    font-weight: bold;
 }
-
+    
 .hero p{
-    font-size: 50px;
+    font-size: 30px;
     margin: 10px 20px 40px 20px;
 }
 
@@ -82,14 +96,9 @@ header nav ul li{
 
     
 
-header{
-    background-color: rgb(242, 250, 90);
-}
 
-header img{
-    width: 230px;
-    height: 230px;
-}
+
+
 
 .scrolle ul li a{
     text-decoration: none;
@@ -109,7 +118,7 @@ header img{
 }
 
 .tituh2 h2{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }
 /* -------------MAIN---------------- */
@@ -129,9 +138,21 @@ body{
     background-attachment: fixed;
 }
 
+
+.carousel{
+    width: 1920px; /* Ancho deseado del carousel */
+    height: 500px; /* Altura deseada del carousel */
+}
+
+.carousel-item img{
+    width: 100%; /* La imagen ocupa todo el ancho del carousel */
+    height: auto; /* La altura se ajusta automáticamente para mantener la relación de aspecto */
+    position: relative; /* Asegura que el carrusel no se superponga a otros elementos */
+    z-index: 10;
+}
 .hero h2{
     color: black;
-    font-size: 110px;
+    font-size: 90px;
 }
 
 .tit h2{
@@ -195,7 +216,6 @@ body{
 /* -------------FOOTER------------- */
 
 footer{
-    background-color: rgb(242, 250, 90);
     display: flex;
 }
 
@@ -204,6 +224,10 @@ footer{
     height: 100px;
 }
 
+.redes{
+    display: flex;
+    justify-content: flex-end;
+}
 .redes img{
     width: 50px;
     height: 50px;

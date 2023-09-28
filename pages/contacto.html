@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <section class="up">
-            <img src="../img/logonegocioautomix.png" alt="hlogo">
-            <h1>Automix</h1>
-            <!--ACA VA LOGO-->
-        </section>
-        <nav>
-            <div class="arriba">
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="./toyota.html">TOYOTA</a></li>
-                    <li><a href="./peugeot.html">PEUGEOT</a></li>
-                    <li><a href="./renault.html">RENAULT</a></li>
-                    <li><a href="./contacto.html">CONTACTO</a></li>
-                </ul>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/logonegocioautomix.png" alt="logonegocio"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item litems">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item litems">
+                            <a class="nav-link" href="./toyota.html">Toyota</a>
+                        </li>
+                        <li class="nav-item litems">
+                            <a class="nav-link" href="./peugeot.html">Peugeot</a>
+                        </li>
+                        <li class="nav-item litems">
+                            <a class="nav-link" href="./renault.html">Renault</a>
+                        </li>
+    
+                        <li class="nav-item litems">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                    </div>
+                </div>
+            </nav>
     </header> 
     <main>
         <section>
@@ -105,7 +123,7 @@
         </section>
     </main>   
     
-</body>
+
 <footer id="pie">
     <div class="footerlogo">
         <img src="../img/logonegocioautomix.png" alt="footerlogo">
@@ -117,4 +135,6 @@
     </div>
     
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
