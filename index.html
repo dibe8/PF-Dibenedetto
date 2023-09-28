@@ -10,26 +10,51 @@
 </head>
 <body>
     <header>
-        <section class="up">
-            <img src="./img/logonegocioautomix.png" alt="hlogo">
-            <h1>Automix</h1>
-            <nav>
-                <ul>
-                    <li><a href="#pie">CONTACTANOS</a></li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/logonegocioautomix.png" alt="logonegocio"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item litems">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item litems">
+                        <a class="nav-link" href="./pages/toyota.html">Toyota</a>
+                    </li>
+                    <li class="nav-item litems">
+                        <a class="nav-link" href="./pages/peugeot.html">Peugeot</a>
+                    </li>
+                    <li class="nav-item litems">
+                        <a class="nav-link" href="./pages/renault.html">Renault</a>
+                    </li>
+
+                    <li class="nav-item litems">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
                 </ul>
-            </nav>
-            <!--ACA VA LOGO-->
-        </section>
-        <nav>
-            <div class="arriba">
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="./pages/toyota.html">TOYOTA</a></li>
-                <li><a href="./pages/peugeot.html">PEUGEOT</a></li>
-                <li><a href="./pages/renault.html">RENAULT</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                
-            </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
         </nav>
     
