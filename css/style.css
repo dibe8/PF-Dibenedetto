@@ -56,13 +56,13 @@ header h1{
 }
 
 .hero h1{
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
 }
     
 .hero p{
-    font-size: 30px;
-    margin: 10px 20px 40px 20px;
+    font-size: 25px;
+    margin: 10px 20px 30px 20px;
 }
 
 .hero a{
@@ -139,17 +139,83 @@ body{
 }
 
 
-.carousel{
-    width: 1920px; /* Ancho deseado del carousel */
-    height: 500px; /* Altura deseada del carousel */
+.carrusel{
+    width: 100%;
+    overflow: hidden;
+    
 }
 
-.carousel-item img{
-    width: 100%; /* La imagen ocupa todo el ancho del carousel */
-    height: auto; /* La altura se ajusta automáticamente para mantener la relación de aspecto */
-    position: relative; /* Asegura que el carrusel no se superponga a otros elementos */
+
+.carrusel img{
+    height: 450px;
     z-index: 10;
+    position: relative;
 }
+
+@media screen and(max-widht:650px){
+
+    .carrusel{
+        width: 600px !important;
+    }
+}
+
+
+.subtitulo h2{
+    display: flex;
+    justify-content: center;
+}
+
+.paragraf p{
+    display: flex;
+
+}
+
+.container-fluid{
+    padding: 0%;
+}
+
+.paragraf img{
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.paragraf{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:900px){
+
+    .paragraf img{
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .paragraf{
+        flex-direction: column;
+    }
+    .paragraf p{
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .paragraf{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:450px){
+    .paragraf p{
+        font-size: 15px;
+        justify-content: space-around;
+    }
+}
+
 .hero h2{
     color: black;
     font-size: 90px;
@@ -213,24 +279,70 @@ body{
     right: 50px;
     bottom: 50px;
 }
-/* -------------FOOTER------------- */
 
-footer{
-    display: flex;
+@media (max-widht:600px){
+    
+    .carousel-item{
+        width: 80%;
+    }
 }
+
+/*-----------GRID------------------*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 20px; /* Espacio alrededor del grid */
+}
+
+.grid-item {
+    border: 1px solid #ccc; /* Borde alrededor de cada elemento */
+    padding: 10px; /* Espacio interno */
+}
+
+.grid-item img {
+    max-width: 100%; /* Para que las imágenes sean responsivas */
+}
+
+  /* Estilos adicionales según sea necesario */
+
+
+.rueda img{
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    
+}
+
+/*-------------CONTACTO MAIN---------*/
+
+
+
+/* -------------FOOTER------------- */
 
 .footerlogo img{
     width: 100px;
     height: 100px;
 }
 
-.redes{
+
+
+.social-icons{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    
 }
-.redes img{
+
+.social-icons img{
     width: 50px;
     height: 50px;
+}
+
+.social-icon{
+    margin-left: 10px;
+    margin-inline-end: 10px;
+    padding: 5px;
 }
 
 
