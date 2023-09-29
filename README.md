@@ -1,1 +1,1 @@
-# segunda
+Hola soy Ariel Dibenedetto tengo 32 años y estoy incursionando en esto de la programacion
