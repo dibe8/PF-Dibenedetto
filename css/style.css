@@ -284,6 +284,8 @@ body{
     }
 }
 
+
+
 /*-----------GRID------------------*/
 
 .grid-container {
@@ -391,54 +393,41 @@ body{
 /*-------------CONTACTO HEADER---------*/
 
 /*-------------CONTACTO MAIN---------*/
-
+.mapita{
+    margin-top: 10px;
+}
 
 
 
 /* -------------FOOTER------------- */
 
-.footerlogo img{
+footer{
+    background-color: #FFC107;
+}
+.footersection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+.loguitofooter img{
     width: 100px;
     height: 100px;
 }
 
-
-
-.social-icons{
-    display: flex;
-    flex-direction: row-reverse;
-    
-}
-
 .social-icons img{
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
 }
 
-.social-icon{
-    margin-left: 10px;
-    margin-inline-end: 10px;
-    padding: 5px;
-}
-
-
-footer basquet{
-    background-color: gray;
-}
-
-
-
-footer futsal img{
-    width: 50px;
-    height: 50px;
-}
-
-footer gimnasio img{
-    width: 50px;
-    height: 50px;
-}
-
-footer natacion img{
-    width: 50px;
-    height: 50px;
-}
+@media screen and (max-width: 550px){
+    .footersection .social-icons a img{
+        width: 30px;
+        height: 30px;
+    }
+} 
+    
