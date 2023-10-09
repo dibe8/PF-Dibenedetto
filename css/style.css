@@ -50,11 +50,6 @@ header h1{
     display: inline-block;
 }
 
-@font-face {
-    font-family: "amsterdam four";
-    src: url(../fonts/amsterdam-four-ttf.ttf);
-}
-
 .hero h1{
     font-size: 60px;
     font-weight: bold;
@@ -93,11 +88,6 @@ header nav ul li{
     display: inline-block;
     margin: 5px 10px 5px 10px;
 }
-
-    
-
-
-
 
 
 .scrolle ul li a{
@@ -138,6 +128,7 @@ body{
     background-attachment: fixed;
 }
 
+/*--------CARROUSEL-------*/
 
 .carrusel{
     width: 100%;
@@ -146,17 +137,11 @@ body{
 }
 
 
+
 .carrusel img{
     height: 450px;
     z-index: 10;
     position: relative;
-}
-
-@media screen and(max-widht:650px){
-
-    .carrusel{
-        width: 600px !important;
-    }
 }
 
 
@@ -185,36 +170,6 @@ body{
     justify-content: space-around;
 }
 
-@media screen and (max-width:900px){
-
-    .paragraf img{
-        width: 300px;
-        height: 200px;
-        margin: 5px;
-    }
-}
-
-@media screen and (max-width:850px){
-    .paragraf{
-        flex-direction: column;
-    }
-    .paragraf p{
-        display: flex;
-        justify-content: center;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .paragraf{
-        align-items: center;
-    }
-}
-
-@media screen and (max-width:450px){
-    .paragraf p{
-        font-size: 15px;
-        justify-content: space-around;
-    }
-}
 
 .hero h2{
     color: black;
@@ -280,6 +235,48 @@ body{
     bottom: 50px;
 }
 
+
+/*---------------MEDIAQUERIES--------*/
+
+@media screen and(max-widht:650px){
+
+    .carrusel{
+        width: 600px !important;
+    }
+}
+
+@media screen and (max-width:900px){
+
+    .paragraf img{
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .paragraf{
+        flex-direction: column;
+    }
+    .paragraf p{
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .paragraf{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:450px){
+    .paragraf p{
+        font-size: 15px;
+        justify-content: space-around;
+    }
+}
+
+
 @media (max-widht:600px){
     
     .carousel-item{
@@ -315,7 +312,86 @@ body{
     
 }
 
+
+
+
+/*-------------PAGE TOYOTA-----------*/
+
+/*---------HEADER TOYOTA------------------*/
+.toyotita img{
+    width: 250px;
+    height: 200px;
+}
+
+.toyotaheader{
+    height: 100px;
+}
+/*-----------MAIN TOYOTA-----------*/
+
+.imgtoyotas{
+    width: 100%;
+    
+    
+}
+
+
+
+.imgtoyotas img{
+    height: 500px;
+    z-index: 10;
+    position: relative;
+}
+
+
+/*-------------PAGE RENAULT-----------*/
+/*---------HEADER RENAULT------------------*/
+
+.renaultitos img{
+    width: 300px;
+    height: 200px;
+}
+
+/*-----------MAIN RENAULT-----------*/
+.imgrenaultitos{
+    width: 100%;
+    
+    
+}
+
+
+
+.imgrenaultitos img{
+    height: 500px;
+    z-index: 10;
+    position: relative;
+}
+
+/*-------------PAGE PEUGEOT-----------*/
+/*---------HEADER PEUGEOT------------------*/
+.peugeotito img{
+    width: 250px;
+    height: 200px;
+}
+
+/*-----------MAIN PEUGEOT-----------*/
+.imgpeugeots{
+    width: 100%;
+    
+    
+}
+
+
+
+.imgpeugeots img{
+    height: 500px;
+    z-index: 10;
+    position: relative;
+}
+/*-------------PAGE CONTACTO---------*/
+/*-------------CONTACTO HEADER---------*/
+
 /*-------------CONTACTO MAIN---------*/
+
 
 
 
