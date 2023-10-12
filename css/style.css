@@ -208,6 +208,10 @@ h1 span{
     font-weight: bold;
 }
 
+.tituh2 span{
+    font-family: "amsterdam-four";
+    font-size: 60px;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -280,27 +284,10 @@ body{
     font-size: 90px;
 }
 
-.tit h2{
-    text-align: center;
-}
-
-
-.tot{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 5px 10px 5px;
-} 
-
-.tot img{
-    width: 1600px;
+.rueda img{
+    width: 500px;
     height: 300px;
-}
-
-
-
-.autos img{
-    width: 250px;
-    height: 250px;
+    margin: 10px;
     
 }
 
@@ -329,15 +316,6 @@ body{
     padding: 4px;
 }
 
-.sti img{
-    height: 60px;
-    width: 60px;
-}
-.sti{
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-}
 
 .iconow a i{
     position: fixed;
@@ -346,8 +324,6 @@ body{
     font-size: 60px;
     color: black;
     z-index: 150;
-    
-    
 }
 
 
@@ -402,38 +378,47 @@ body{
 
 
 /*-----------GRID------------------*/
-
-.grid-container {
+.grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas responsivas */
     gap: 20px; /* Espacio entre elementos */
-    padding: 20px; /* Espacio alrededor del grid */
-    
+    padding: 20px; /* Espacio alrededor del grid */
+
 }
 
-.grid-item {
+.grid-item{
     border: 1px solid #ccc; /* Borde alrededor de cada elemento */
     padding: 10px; /* Espacio interno */
     
 }
 
-.card{
-    justify-items: center;
-}
 
-.grid-item img {
+
+.grid-item img{
     max-width: 100%; /* Para que las imágenes sean responsivas */
 }
 
-  /* Estilos adicionales según sea necesario */
-
-
-.rueda img{
+.card img{
     width: 500px;
     height: 300px;
-    margin: 10px;
-    
 }
+
+.h3{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+@media screen and(max-width: 1135px){
+    .beneficios{
+        display: grid;
+        grid-auto-rows: 300px 300px 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
 
 
 
