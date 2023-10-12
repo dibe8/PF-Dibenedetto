@@ -17,93 +17,160 @@ header{
     z-index: 100;
 }
 
-
-.navbar-brand img{
-    width: 180px;
-    height: 180px;
+header nav ul li{
+    display: inline-block;
+    margin: 5px 10px 5px 10px;
 }
 
 .litems a{
     font-size: 120%;
     font-weight: bold;
     color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    color: black;
+    background-color: #b88b03;
+    border-radius: 20px;
+    position: relative;  
+    outline: none;
+    cursor: pointer; 
+    transition: .5s;
+    overflow: hidden;
 }
-header h1{
-    font-size: 90px;
+
+.litems:hover a{
+    color: white;
+    background-color: black;
+}
+
+
+.navbar-brand img{
+    width: 180px;
+    height: 180px;
+}
+
+.collapse form input{
+    border-radius: 20px;
+    border-color: black;
+}
+.collapse button{
+    background-color: #b88b03;
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* -------------MAIN---------------- */
+.hero h1{
+    font-size: 70px;
     text-align: center;
+    border: solid 5px white;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+h1{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+h1 span{
+    color: #FFC107;
+}
+.hero p{
+        font-size: 25px;
+        margin: 10px 20px 30px 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.562);
+    }
+    
+.hero a{
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        background-color: black;
+        padding: 10px;
+        border: 2px solid white;
     }
 
-.up{
-    display: flex;
-    justify-content: space-between;
+.hero{
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+        background-image: url("../img/bgconcesi.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+@media screen and (max-width: 825px){
+
+        .hero h1{
+            border: none;
+        }
+    }
+@media screen and (max-width: 450px){
+
+    .hero h1{
+        font-size: 55px;
+        border: none;
+    }
 
 }
 
-.up nav li ul a{
-    text-decoration: none;
-    text-align: center;
-    padding: 50%;
+@media screen and (max-width: 450px){
+
+    .hero p{
+        font-size: 20px;
+    }
 
 }
 
-.up div img{
-    display: inline-block;
-}
+@media screen and (max-width: 450px){
 
-.hero h1{
-    font-size: 60px;
-    font-weight: bold;
+    .hero a{
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        background-color: black;
+        padding: 5px;
+        border: 2px solid white;
+    }
 }
     
-.hero p{
-    font-size: 25px;
-    margin: 10px 20px 30px 20px;
-}
 
-.hero a{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    background-color: black;
-    padding: 10px;
-    border: 2px solid white;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 120%;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-
-.arriba{
-    display: flex;
-    justify-content: center;
-}
-header nav ul li{
-    display: inline-block;
-    margin: 5px 10px 5px 10px;
-}
-
-
-.scrolle ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 120%;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
-}
+/*--------Segunda parte index--------*/
 
 .tituh2 h2{
     text-align: center;
     color: black;
-    background-color: rgb(242, 250, 90);
+    background-color: #FFC107;
     padding: 1%;
 }
 
@@ -111,22 +178,13 @@ header nav ul li{
     font-size: 30px;
     font-weight: bold;
 }
-/* -------------MAIN---------------- */
+
 
 body{
     font-family: 'Poppins', sans-serif;
 }
 
-.hero{
-    width: 100%;
-    height: 80vh;
-    text-align: center;
-    background-image: url("../img/bgconcesi.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 
 /*--------CARROUSEL-------*/
 
@@ -150,6 +208,23 @@ body{
     justify-content: center;
 }
 
+.subtitulo h2{
+    background-color: #FFC107;
+}
+
+
+@font-face {
+    font-family: "amsterdam-four";
+    src: url(../fonts/amsterdam-four-ttf.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+.subtitulo h2 span{
+    font-family: "amsterdam-four";
+    font-weight: bold;
+    font-size: 40px;
+    
+}
 .paragraf p{
     display: flex;
 
@@ -233,6 +308,17 @@ body{
     position: fixed;
     right: 50px;
     bottom: 50px;
+}
+
+.iconow a i{
+    position: fixed;
+    right: 50px;
+    bottom: 125px;
+    font-size: 60px;
+    color: black;
+    z-index: 150;
+    
+    
 }
 
 
@@ -346,6 +432,7 @@ body{
 
 
 /*-------------PAGE RENAULT-----------*/
+
 /*---------HEADER RENAULT------------------*/
 
 .renaultitos img{
@@ -393,6 +480,21 @@ body{
 /*-------------CONTACTO HEADER---------*/
 
 /*-------------CONTACTO MAIN---------*/
+h2{
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.formularios{
+    background-color: rgba(0, 0, 0, 0.562); 
+}
+
+
 .mapita{
     margin-top: 10px;
 }
