@@ -297,11 +297,19 @@ body{
 .iconow a i{
     position: fixed;
     right: 50px;
-    bottom: 125px;
+    bottom: 70px;
     font-size: 60px;
     color: black;
     z-index: 150;
+    
+    
 }
+
+.bi-whatsapp::before {
+    background-color: #25D366;
+    border-radius: 80%;
+}
+
 
 
 /*---------------MEDIAQUERIES--------*/
@@ -383,18 +391,15 @@ body{
     
 }
 
-.beneficios .cards div p{
-    height: 30px
-    };
 
 @media screen and (max-width:850px){
         .beneficios .cards div{
             width: 300px;
-            height: 450px;
+            height: auto;
         }
         .beneficios .cards div img{
-            width: 298px;
-            height: 300px;
+            width: 296px;
+            height: auto;
         }
         .beneficios .cards div h3{
             height: auto;
@@ -602,7 +607,7 @@ body{
 .cajasform input{
     padding-left: 5px;
     border-radius: 20px;
-    width: 15%;
+    width: 300px;
 }
 
 .mapita{
@@ -620,7 +625,7 @@ body{
 }
 
 .mapita ul{
-    width: 40%;
+    width: 600px;
     border: 2px solid white;
     margin: 2px;
     background-color: rgba(0, 0, 0, 0.822);
@@ -681,6 +686,12 @@ body{
     }
 } 
 
+
+@media screen and (max-width:650px){
+    .mapita ul{
+        width: 90%;
+    }
+}
 
 
 /* -------------FOOTER------------- */
