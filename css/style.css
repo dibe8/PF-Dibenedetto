@@ -364,7 +364,6 @@ body{
 .beneficios .cards div{
     width: 400px;
     height: 600px;
-    display: inline-block;
     border: 2px solid black;
     margin-top: 1px;
     margin-right: 10px;
@@ -388,24 +387,22 @@ body{
     height: 30px
     };
 
-@media screen and (max-width:600px){
+@media screen and (max-width:850px){
+        .beneficios .cards div{
+            width: 300px;
+            height: 450px;
+        }
+        .beneficios .cards div img{
+            width: 298px;
+            height: 300px;
+        }
+        .beneficios .cards div h3{
+            height: auto;
+        }
+    }
 
-    .cards div{
-        width: 300px;
-        height: auto;
-    }
     
-    .cards div img{
-        width: 298px;
-        height: auto;
-    }
-    .cards div h3{
-        height: auto;
-    }
-    .cards div p{
-        height: auto;
-}
-}
+
     
 
 /*-----------GRID------------------*/
@@ -439,13 +436,7 @@ body{
     font-size: 40px;
 }
 
-@media screen and(max-width: 1135px){
-    .beneficios{
-        display: grid;
-        grid-auto-rows: 300px 300px 300px;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
+
 
 
 
