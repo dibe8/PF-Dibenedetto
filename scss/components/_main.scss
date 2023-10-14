@@ -1,0 +1,66 @@
+.hero{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url("../img/bgconcesi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{
+        h1{
+            font-size: 70px;
+            text-align: center;
+            border: solid 5px white;
+            padding: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.562);
+        }
+        &.animate__lightSpeedInRight{
+            -webkit-animation-name: lightSpeedInRight;
+            animation-name: animate__lightSpeedInRight;
+        }
+        &.animate__animated{
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-duration: var(--animate-duration);
+            animation-duration: var(--animate-duration);
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }    
+            h1 span{
+                    color: #FFC107;
+            }
+        p{
+            font-size: 25px;
+            margin: 10px 20px 30px 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.562);            
+        }
+        a{
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        background-color: black;
+        padding: 10px;
+        border: 2px solid white;
+        }
+    }
+        }
+    

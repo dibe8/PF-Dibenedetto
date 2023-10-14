@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
 /*-------------RESET------------- */
 
 *{
@@ -6,9 +9,12 @@
     
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
+/* -------------HEADER------------- */
 
-/*---------BOOTSTRAP-------*/
 header{
     position: sticky;
     top: 0;
@@ -65,19 +71,12 @@ header nav ul li{
     color: white;
 }
 
-@media screen and (max-width: 991px){
+/*----------AMSTERDAM FONT----------*/
 
-    .litems a{
-        display: flex;
-        justify-content: center;
-    }
-
-    header{
-        height: 70%;
-    }
-
-    .navbar-brand img{
-        width: 120px;
-        height: 120px;
-    }
+@font-face {
+    font-family: "amsterdam-four";
+    src: url(../fonts/amsterdam-four-ttf.ttf);
+    font-weight: bold;
+    font-style: bold;
 }
+

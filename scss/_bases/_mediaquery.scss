@@ -1,0 +1,71 @@
+@media screen and (max-width: 991px){
+
+    header nav ul .litems a{
+        display: flex;
+        justify-content: center;
+    }
+
+    header{
+        height: 70%;
+    }
+
+    header .navbar-brand img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 825px){
+
+    .hero h1{
+        border: none;
+    }
+}
+@media screen and (max-width: 450px){
+
+.hero h1{
+    font-size: 55px;
+    border: none;
+}
+
+}
+
+@media screen and (max-width: 450px){
+
+.hero p{
+    font-size: 20px;
+}
+
+}
+
+@media screen and (max-width: 450px){
+
+.hero a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid white;
+}
+}
+
+
+
+
+/*------------FOOTER MQ-------------*/
+
+@media screen and (max-width: 550px){
+    footer .footersection .social-icons a img{
+        width: 30px;
+        height: 30px;
+    }
+} 
+    
+@media screen and (max-width: 550px){
+    footer .derechos{
+        font-size: 10px;
+    }
+} 
