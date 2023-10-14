@@ -354,6 +354,60 @@ body{
 
 
 
+/*-----------CARDS------------------*/
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.beneficios .cards div{
+    width: 400px;
+    height: 600px;
+    display: inline-block;
+    border: 2px solid black;
+    margin-top: 1px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+}
+.beneficios .cards div img{
+    width: 396px;
+    height: 400px;
+}
+
+.beneficios .cards div h3{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+
+.beneficios .cards div p{
+    height: 30px
+    };
+
+@media screen and (max-width:600px){
+
+    .cards div{
+        width: 300px;
+        height: auto;
+    }
+    
+    .cards div img{
+        width: 298px;
+        height: auto;
+    }
+    .cards div h3{
+        height: auto;
+    }
+    .cards div p{
+        height: auto;
+}
+}
+    
+
 /*-----------GRID------------------*/
 .grid-container{
     display: grid;
@@ -506,6 +560,22 @@ body{
 /*-------------CONTACTO HEADER---------*/
 
 /*-------------CONTACTO MAIN---------*/
+.bgcontact{
+    width: 100%;
+    background-image: url("../img/pexels-modificada.jpg");
+    background-size: cover;
+    background-position: 0px 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+
+.formularios{
+    background-color: rgba(0, 0, 0, 0.281);
+    
+}
+
 .subcontacto h2{
     color: white;
     background-color: rgba(0, 0, 0, 0.562);
@@ -516,10 +586,7 @@ body{
     justify-content: center;
 }
 
-.formularios{
-    background-color: rgba(0, 0, 0, 0.562);
-    
-}
+
 
 .titleform{
     font-weight: bold;
@@ -535,14 +602,18 @@ body{
     border: 2px solid #0d0d0d;
 }
 
-.tip radio{
-    border: 2px solid #0d0d0d;
+.seleccion:hover select{
+    color: #b88b03;
+    background-color: black;
+    transition: .5s;
 }
 
 .cajasform input{
     padding-left: 5px;
     border-radius: 20px;
+    width: 15%;
 }
+
 .mapita{
     margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.562);
@@ -550,19 +621,41 @@ body{
 
 .mapita h3{
     background-color: rgba(0, 0, 0, 0.562);
-    color: black;
-    font-weight: bold;
+    color: white;
+    font-size: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
 }
 
-.mapita ul li{
-    font-weight: bold;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.mapita ul{
+    width: 40%;
+    border: 2px solid white;
+    margin: 2px;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: #b88b03;
+    
 }
 
+.titlelugar{
+    display: flex;
+    justify-content: center;
+}
+.mapita ul li{
+    font-weight: bold;
+    color: #b88b03;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid white;
+    margin: 2px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+.mapita ul li span{
+    font-family: "amsterdam-four";
+    font-size: 25px;
+    font-weight: bold;
+}
 .separate input{
     border: solid 2px;
     font-weight: bold;
@@ -625,6 +718,7 @@ footer{
     align-content: center;
     background-color: black;
     color: #FFC107;
+    padding: 15px;
 }
 
 .derechos span{
