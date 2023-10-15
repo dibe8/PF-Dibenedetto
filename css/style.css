@@ -239,7 +239,9 @@ header nav ul li{
 
 }
 
-
+.container-fluid{
+    padding: 0%;
+}
 
 .paragraf img{
     width: 500px;

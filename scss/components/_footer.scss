@@ -1,5 +1,7 @@
+/*-----------FOOTER SECCION----------*/
+
 footer{
-    background-color: #FFC107;
+    background-color: $color-principal;
 }
 
     .footersection{
@@ -20,8 +22,8 @@ footer{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: black;
-    color: #FFC107;
+    background-color: $color-secundario;
+    color: $color-principal;
     p{
 
         span{

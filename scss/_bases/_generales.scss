@@ -29,12 +29,12 @@ header nav ul li{
 .litems a{
     font-size: 120%;
     font-weight: bold;
-    color: black;
+    color: $color-secundario;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
-    color: black;
-    background-color: #b88b03;
+    color: $color-secundario;
+    background-color: $color-principal;
     border-radius: 20px;
     position: relative;  
     outline: none;
@@ -44,8 +44,8 @@ header nav ul li{
 }
 
 .litems:hover a{
-    color: white;
-    background-color: black;
+    color: $color-terciario;
+    background-color: $color-secundario;
 }
 
 
@@ -56,19 +56,19 @@ header nav ul li{
 
 .collapse form input{
     border-radius: 20px;
-    border-color: black;
+    border-color: $color-secundario;
 }
 .collapse button{
-    background-color: #b88b03;
-    color: black;
+    background-color: $color-principal;
+    color: $color-secundario;
     font-weight: bold;
     font-size: 120%;
     border-radius: 20px;
 }
 
 .btn:hover{
-    background-color: black;
-    color: white;
+    background-color: $color-secundario;
+    color: $color-terciario;
 }
 
 /*----------AMSTERDAM FONT----------*/
@@ -96,6 +96,64 @@ header nav ul li{
     position: relative;
 }
 
+/*-----------PRESENTACION AUTOS---------*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 20px; /* Espacio alrededor del grid */
+
+}
+
+.grid-item{
+    border: 1px solid #ccc; /* Borde alrededor de cada elemento */
+    padding: 10px; /* Espacio interno */
+    
+}
+
+
+
+.grid-item img{
+    max-width: 100%; /* Para que las imágenes sean responsivas */
+}
+
+.card img{
+    width: 500px;
+    height: 300px;
+}
+
+.grid-item{
+    align-content: center;
+    flex-direction: column;
+}
+.grid-item h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.grid-item h3{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.grid-item a{
+    text-decoration: none;
+    text-decoration: none;
+    color: $color-secundario;
+    padding: 4px;
+    border: 2px solid $color-secundario;
+    text-align: center;
+    
+
+}
+
+.grid-item:hover a{
+    background-color: $color-secundario;
+    color: white;
+    transition: .5s;
+}
+
 /*---------ICONO WHATSAPP------------*/
 
 .iconow a i{
@@ -103,7 +161,7 @@ header nav ul li{
     right: 50px;
     bottom: 70px;
     font-size: 50px;
-    color: black;
+    color: $color-secundario;
     z-index: 150;
     
     

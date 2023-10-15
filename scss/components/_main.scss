@@ -33,7 +33,7 @@
             background-color: rgba(0, 0, 0, 0.562);
         }
             h1 span{
-                    color: #FFC107;
+                    color: $color-principal;
             }
         p{
             font-size: 25px;
@@ -47,9 +47,9 @@
         color: white;
         font-weight: bold;
         font-size: 30px;
-        background-color: black;
+        background-color: $color-secundario;
         padding: 10px;
-        border: 2px solid white;
+        border: 2px solid $color-terciario;
         }
     }
         }
