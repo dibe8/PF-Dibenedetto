@@ -55,5 +55,76 @@
         }
 
 
+.container{
+    .subtitulo{
+        h2{
+            display: flex;
+            justify-content: center;
+            background-color: $color-principal;}
 
+            span{
+                font-family: "amsterdam-four";
+                font-weight: bold;
+                font-size: 40px;
+            }
+        }
+    .paragraf{
+        display: flex;
+        justify-content: space-around;}
+
+        p{
+            display: flex;
+        }
+        img{
+            width: 500px;
+            height: 300px;
+            margin: 10px;
+        }
     
+        }
+
+.tituh2{
+    h2{
+        text-align: center;
+        color:$color-secundario;
+        background-color: $color-principal;
+        padding: 1%;
+        font-size: 30px;
+        font-weight: bold;
+        span{
+            font-family: "amsterdam-four";
+            font-size: 60px;
+        }
+    }
+}
+
+/*------------CARDS----------------*/
+
+.beneficios{
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            width: 400px;
+            height: 600px;
+            border: 2px solid $color-secundario;
+            margin-top: 1px;
+            margin-right: 5px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            img{
+                width: 396px;
+                height: 400px;
+            }
+            h3{
+                text-align: center;
+                font-size: 17px;
+                font-weight: bold;
+            }
+            p{
+
+            }
+        }
+    }
+}

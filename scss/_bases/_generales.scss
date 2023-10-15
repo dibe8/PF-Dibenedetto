@@ -80,3 +80,36 @@ header nav ul li{
     font-style: bold;
 }
 
+/*--------CARROUSEL-------*/
+
+.carrusel{
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+
+
+.carrusel img{
+    height: 450px;
+    z-index: 10;
+    position: relative;
+}
+
+/*---------ICONO WHATSAPP------------*/
+
+.iconow a i{
+    position: fixed;
+    right: 50px;
+    bottom: 70px;
+    font-size: 50px;
+    color: black;
+    z-index: 150;
+    
+    
+}
+
+.bi-whatsapp::before {
+    background-color: #25D366;
+    border-radius: 80%;
+}

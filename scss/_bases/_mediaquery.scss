@@ -53,8 +53,78 @@
 }
 
 
+/*-----------CARRUSEL----------------*/
+
+@media screen and(max-widht:650px){
+
+    .carrusel{
+        width: 600px !important;
+    }
+}
+
+@media (max-widht:600px){
+    
+    .carousel-item{
+        width: 80%;
+    }
+}
+
+/*------------SUBTITULO MAIN---------*/
+
+@media screen and (max-width:650px){
+
+    .subtitulo h2{
+        font-size: 20px;
+    }
+}
 
 
+@media screen and (max-width:900px){
+
+    .paragraf img{
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .paragraf{
+        flex-direction: column;
+    }
+    .paragraf p{
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .paragraf{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:450px){
+    .paragraf p{
+        font-size: 15px;
+        justify-content: space-around;
+    }
+}
+
+/*-------------MEDIAQUERY CARDS------*/
+
+@media screen and (max-width:850px){
+    .beneficios .cards div{
+        width: 300px;
+        height: auto;
+    }
+    .beneficios .cards div img{
+        width: 296px;
+        height: auto;
+    }
+    .beneficios .cards div h3{
+        height: auto;
+    }
+}
 /*------------FOOTER MQ-------------*/
 
 @media screen and (max-width: 550px){

@@ -1,0 +1,47 @@
+/*--------HEADER TOYOTA--------*/
+
+.toyotaheader{
+    height: 100px;
+}
+
+.toyotita img{
+    width: 250px;
+    height: 200px;
+}
+
+/*-----------MAIN TOYOTA-----------*/
+
+.imgtoyotas{
+    width: 100%;
+    img{
+        height: 500px;
+        z-index: 10;
+        position: relative;
+    }
+}
+
+.grid-item{
+    align-content: center;
+    flex-direction: column;
+    h2{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    h3{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    a{
+        text-decoration: none;
+        text-decoration: none;
+        color: $color-secundario;
+        padding: 4px;
+        border: 2px solid $color-secundario;
+        text-align: center;
+        &:hover{
+            background-color: $color-secundario;
+            color: $color-terciario;
+            transition: .5s;
+        }
+    }
+}
