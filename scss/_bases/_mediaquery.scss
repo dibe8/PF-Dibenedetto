@@ -22,13 +22,13 @@
 
 @media screen and (max-width: 825px){
 
-    .hero h1{
+    .hero .display-3 h1{
         border: none;
     }
 }
 @media screen and (max-width: 450px){
 
-.hero h1{
+.hero .display-3 h1{
     font-size: 55px;
     border: none;
 }
@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 450px){
 
-.hero p{
+.hero .display-3 p{
     font-size: 20px;
 }
 
@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 450px){
 
-.hero a{
+.hero .display-3 a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: white;
