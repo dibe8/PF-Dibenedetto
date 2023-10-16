@@ -392,7 +392,7 @@ header nav ul li {
     .bgcontact .agrupado .formularios .container-fluid .titleform textarea {
       border: 2px solid #0d0d0d;
       border-radius: 5px;
-      width: 290px; }
+      width: 250px; }
     .bgcontact .agrupado .formularios .container-fluid .titleform select {
       border: 2px solid #0d0d0d;
       border-radius: 15px; }
@@ -625,9 +625,9 @@ footer .footersection .logiii img {
   .bgcontact .agrupado .mapita ul {
     width: 80%; } }
 
-@media screen and (max-width: 450px) {
-  .container-fluid .titleform textarea {
-    width: 200px; } }
+@media screen and (max-width: 500px) {
+  .bgcontact .agrupado .formularios .container-fluid .leave textarea {
+    width: 90%; } }
 
 /*------------FOOTER MQ-------------*/
 @media screen and (max-width: 550px) {
