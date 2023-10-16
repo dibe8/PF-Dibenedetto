@@ -186,8 +186,11 @@
     }
 }
 
-
-
+@media screen and (max-width:450px){
+    .container-fluid .titleform textarea{
+        width: 200px;
+    }
+}
 
 
 /*------------FOOTER MQ-------------*/

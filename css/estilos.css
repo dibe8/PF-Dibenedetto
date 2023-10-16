@@ -391,7 +391,8 @@ header nav ul li {
         background-color: black; }
     .bgcontact .agrupado .formularios .container-fluid .titleform textarea {
       border: 2px solid #0d0d0d;
-      border-radius: 5px; }
+      border-radius: 5px;
+      width: 290px; }
     .bgcontact .agrupado .formularios .container-fluid .titleform select {
       border: 2px solid #0d0d0d;
       border-radius: 15px; }
@@ -402,7 +403,8 @@ header nav ul li {
     margin-left: 25px;
     width: 250px;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center; }
     .bgcontact .agrupado .formularios .container-fluid .elegir:hover {
       color: #FFC107;
       background-color: black; }
@@ -622,6 +624,10 @@ footer .footersection .logiii img {
 @media screen and (max-width: 650px) {
   .bgcontact .agrupado .mapita ul {
     width: 80%; } }
+
+@media screen and (max-width: 450px) {
+  .container-fluid .titleform textarea {
+    width: 200px; } }
 
 /*------------FOOTER MQ-------------*/
 @media screen and (max-width: 550px) {
