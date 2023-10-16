@@ -131,33 +131,58 @@
     }
 }
 
+/*--------MEDIAQUERY ACORDEON-------*/
+@media screen and (max-width:500px){
+    .tituacordeon{
+        h2{
+            font-size: 20px;
+            span{
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .tituacordeon{
+        h2{
+            font-size: 18px;
+            span{
+                font-size: 35px;
+            }
+        }
+    }
+}
 
 /*-------MEDIAQUERY CONTACTO--------*/
-
 @media screen and (max-width: 450px){
     .bgcontact{
-        background-image: url("../img/cover-contacto-chico.jpg");
+        background-image: linear-gradient(rgba(255, 255, 255, 0.381), rgba(0, 0, 0, 0.381)), url("../img/cover-contacto-chico.jpg");
         width: auto;
         height: 100%;
     }
 } 
 
+
 @media screen and (max-width: 800px){
-    .subcontacto h2{
+    .bgcontact .agrupado .formularios .subcontacto h2{
         font-size: 50px;
     }
 } 
 
-@media screen and (max-width: 450px){
-    .subcontacto h2{
+
+
+
+@media screen and (max-width: 550px){
+    .bgcontact .agrupado .formularios .subcontacto h2{
         font-size: 35px;
     }
 } 
 
 
 @media screen and (max-width:650px){
-    .mapita ul{
-        width: 90%;
+    .bgcontact .agrupado .mapita ul{
+        width: 80%;
     }
 }
 

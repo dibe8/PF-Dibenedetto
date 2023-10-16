@@ -2,22 +2,18 @@
 
 .bgcontact{
     width: 100%;
-    background-image: url("../img/pexels-modificada.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.381), rgba(0, 0, 0, 0.381)), url("../img/pexels-modificada.jpg");
     background-size: cover;
     background-position: 0px 50px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     .agrupado{
-
-    
         .formularios{
-            background-color: rgba(0, 0, 0, 0.281);
-    }
             .subcontacto{
                 h2{
                     color: $color-terciario;
                     background-color: rgba(0, 0, 0, 0.562);
-                    font-size: 80px;
+                    font-size: 70px;
                     font-weight: bold;
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     display: flex;
@@ -29,22 +25,57 @@
                     font-weight: bold;
                     color: $color-secundario;
                     padding-left: 5px;
+                    h3{
+                        width: 290px;
+                        background-color: rgba(0, 0, 0, 0.781);
+                        font-size: 20px;
+                        color: $color-principal;
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: start;
+                        padding-left: 5px;
+                        border-radius: 15px;
+                    }
+                        
                     textarea{
                         border: 2px solid #0d0d0d;
+                        border-radius: 5px;
                     }
                     select{
                         border: 2px solid #0d0d0d;
+                        border-radius: 15px;
                     }
             }
+                .titlecondicion{
+                    h3{
+                        display: flex;
+                        justify-content: start;
+                        padding-left:  5px;
+                    }
+                }
+                .seleccion{
+                    h3{
+                        width: 290px;
+                        background-color: rgba(0, 0, 0, 0.781);
+                        color: $color-principal;
+                        
+
+                    }
+                    &:hover select{
+                        color: $color-principal;
+                        background-color: $color-secundario;
+                        transition: .5s;
+                    }
+                    
+                }
+                
                 .cajasform{
                     input{
                         padding-left: 5px;
                         border-radius: 20px;
                         width: 300px;
+                        margin-left: 5px;
                     }
-
-            }
-                .seleccion{
 
             }
                 .separate{
@@ -58,18 +89,20 @@
                         cursor: pointer; 
                         transition: .5s;
                         overflow: hidden;
-                        .ine &:hover{
+                        border-radius: 15px;
+                        &:hover{
                             background-color: $color-secundario;
                             color: $color-principal;
                         }
-                        .sise &:hover{
+                        &:hover{
                             background-color: $color-secundario;
                             color: $color-principal;
                         }
                     }
-
             }
         }
+    }
+    
         .mapita{
             margin-top: 10px;
             background-color: rgba(0, 0, 0, 0.562);
@@ -90,9 +123,9 @@
             color: $color-principal;
             li{
                 font-weight: bold;
-                color: #b88b03;
+                color: $color-principal;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
-                border: 2px solid white;
+                border: 2px solid $color-terciario;
                 margin: 2px;
                 padding: 10px;
                 background-color: rgba(0, 0, 0, 0.822);
@@ -107,7 +140,7 @@
                 }
             }
         }
-        
+    
 
         }
 }

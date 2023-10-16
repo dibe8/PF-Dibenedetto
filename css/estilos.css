@@ -57,6 +57,14 @@ header nav ul li {
   background-color: black;
   color: white; }
 
+/*--------HEADER TOYOTA--------*/
+.toyotaheader {
+  height: 100px; }
+
+.toyotita img {
+  width: 250px;
+  height: 200px; }
+
 /*----------AMSTERDAM FONT----------*/
 @font-face {
   font-family: "amsterdam-four";
@@ -141,7 +149,7 @@ header nav ul li {
   width: 100%;
   height: 80vh;
   text-align: center;
-  background-image: url("../img/bgconcesi.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.671), rgba(0, 0, 0, 0.381)), url("../img/bgconcesi.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -184,38 +192,42 @@ header nav ul li {
     padding: 10px;
     border: 2px solid white; }
 
-.container .subtitulo h2 {
-  display: flex;
-  justify-content: center;
-  background-color: #FFC107; }
-
-.container .subtitulo span {
-  font-family: "amsterdam-four";
-  font-weight: bold;
-  font-size: 40px; }
+.container .subtitulo {
+  margin-bottom: 30px; }
+  .container .subtitulo h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #FFC107; }
+  .container .subtitulo span {
+    font-family: "amsterdam-four";
+    font-weight: bold;
+    font-size: 40px; }
 
 .container .paragraf {
   display: flex;
   justify-content: space-around; }
 
-.container p {
-  display: flex; }
+.container .textpar {
+  display: flex;
+  flex-direction: column; }
 
 .container img {
   width: 500px;
   height: 300px;
   margin: 10px; }
 
-.tituh2 h2 {
-  text-align: center;
-  color: black;
-  background-color: #FFC107;
-  padding: 1%;
-  font-size: 30px;
-  font-weight: bold; }
-  .tituh2 h2 span {
-    font-family: "amsterdam-four";
-    font-size: 60px; }
+.tituh2 {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .tituh2 h2 {
+    text-align: center;
+    background-color: #FFC107;
+    padding: 1%;
+    font-size: 30px;
+    font-weight: bold; }
+    .tituh2 h2 span {
+      font-family: "amsterdam-four";
+      font-size: 60px; }
 
 /*------------CARDS----------------*/
 .beneficios .cards {
@@ -229,7 +241,10 @@ header nav ul li {
     margin-top: 1px;
     margin-right: 5px;
     margin-left: 10px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    box-shadow: 10px 7px 30px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 7px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 7px 30px 0px rgba(0, 0, 0, 0.75); }
     .beneficios .cards div img {
       width: 396px;
       height: 400px; }
@@ -237,6 +252,22 @@ header nav ul li {
       text-align: center;
       font-size: 17px;
       font-weight: bold; }
+
+.tituacordeon {
+  background-color: #FFC107;
+  margin-bottom: 30px;
+  margin-top: 30px; }
+  .tituacordeon h2 {
+    display: flex;
+    justify-content: center; }
+    .tituacordeon h2 span {
+      font-family: "amsterdam-four";
+      font-size: 50px; }
+
+.titulofrecuente {
+  padding-left: 5px;
+  background-color: #FFC107;
+  margin-bottom: 10px; }
 
 /*--------HEADER TOYOTA--------*/
 .toyotaheader {
@@ -304,34 +335,57 @@ header nav ul li {
 /*-------------CONTACTO MAIN---------*/
 .bgcontact {
   width: 100%;
-  background-image: url("../img/pexels-modificada.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.381), rgba(0, 0, 0, 0.381)), url("../img/pexels-modificada.jpg");
   background-size: cover;
   background-position: 0px 50px;
   background-repeat: no-repeat;
   background-attachment: fixed; }
-  .bgcontact .agrupado .formularios {
-    background-color: rgba(0, 0, 0, 0.281); }
-  .bgcontact .agrupado .subcontacto h2 {
+  .bgcontact .agrupado .formularios .subcontacto h2 {
     color: white;
     background-color: rgba(0, 0, 0, 0.562);
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center; }
-  .bgcontact .agrupado .container-fluid .titleform {
+  .bgcontact .agrupado .formularios .container-fluid .titleform {
     font-weight: bold;
     color: black;
     padding-left: 5px; }
-    .bgcontact .agrupado .container-fluid .titleform textarea {
-      border: 2px solid #0d0d0d; }
-    .bgcontact .agrupado .container-fluid .titleform select {
-      border: 2px solid #0d0d0d; }
-  .bgcontact .agrupado .container-fluid .cajasform input {
+    .bgcontact .agrupado .formularios .container-fluid .titleform h3 {
+      width: 290px;
+      background-color: rgba(0, 0, 0, 0.781);
+      font-size: 20px;
+      color: #FFC107;
+      margin-top: 10px;
+      display: flex;
+      justify-content: start;
+      padding-left: 5px;
+      border-radius: 15px; }
+    .bgcontact .agrupado .formularios .container-fluid .titleform textarea {
+      border: 2px solid #0d0d0d;
+      border-radius: 5px; }
+    .bgcontact .agrupado .formularios .container-fluid .titleform select {
+      border: 2px solid #0d0d0d;
+      border-radius: 15px; }
+  .bgcontact .agrupado .formularios .container-fluid .titlecondicion h3 {
+    display: flex;
+    justify-content: start;
+    padding-left: 5px; }
+  .bgcontact .agrupado .formularios .container-fluid .seleccion h3 {
+    width: 290px;
+    background-color: rgba(0, 0, 0, 0.781);
+    color: #FFC107; }
+  .bgcontact .agrupado .formularios .container-fluid .seleccion:hover select {
+    color: #FFC107;
+    background-color: black;
+    transition: .5s; }
+  .bgcontact .agrupado .formularios .container-fluid .cajasform input {
     padding-left: 5px;
     border-radius: 20px;
-    width: 300px; }
-  .bgcontact .agrupado .container-fluid .separate input {
+    width: 300px;
+    margin-left: 5px; }
+  .bgcontact .agrupado .formularios .container-fluid .separate input {
     border: solid 2px;
     font-weight: bold;
     margin: 5px;
@@ -340,11 +394,12 @@ header nav ul li {
     outline: none;
     cursor: pointer;
     transition: .5s;
-    overflow: hidden; }
-    .ine .bgcontact .agrupado .container-fluid .separate input:hover {
+    overflow: hidden;
+    border-radius: 15px; }
+    .bgcontact .agrupado .formularios .container-fluid .separate input:hover {
       background-color: black;
       color: #FFC107; }
-    .sise .bgcontact .agrupado .container-fluid .separate input:hover {
+    .bgcontact .agrupado .formularios .container-fluid .separate input:hover {
       background-color: black;
       color: #FFC107; }
   .bgcontact .agrupado .mapita {
@@ -365,7 +420,7 @@ header nav ul li {
     color: #FFC107; }
     .bgcontact .agrupado ul li {
       font-weight: bold;
-      color: #b88b03;
+      color: #FFC107;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       border: 2px solid white;
       margin: 2px;
@@ -382,15 +437,23 @@ header nav ul li {
 /*-----------FOOTER SECCION----------*/
 footer {
   background-color: #FFC107; }
+  footer .footersection {
+    background-color: #FFC107;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer .footersection .logfooter img {
+      width: 110px;
+      height: 110px; }
+    footer .footersection .social-icons img {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      color: black; }
 
-.footersection {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  .footersection div img {
-    width: 80px;
-    height: 80px;
-    margin: 5px; }
+footer .footersection .logiii img {
+  width: 110px;
+  height: 110px; }
 
 .derechos {
   display: flex;
@@ -401,6 +464,10 @@ footer {
   .derechos p span {
     font-family: "amsterdam-four";
     font-size: 15px; }
+
+footer .footersection .logiii img {
+  width: 110px;
+  height: 110px; }
 
 /*-------------MEDIAQUERY HEADER BOOTSTRAP---------*/
 @media screen and (max-width: 991px) {
@@ -485,24 +552,37 @@ footer {
   .beneficios .cards div h3 {
     height: auto; } }
 
+/*--------MEDIAQUERY ACORDEON-------*/
+@media screen and (max-width: 500px) {
+  .tituacordeon h2 {
+    font-size: 20px; }
+    .tituacordeon h2 span {
+      font-size: 40px; } }
+
+@media screen and (max-width: 500px) {
+  .tituacordeon h2 {
+    font-size: 18px; }
+    .tituacordeon h2 span {
+      font-size: 35px; } }
+
 /*-------MEDIAQUERY CONTACTO--------*/
 @media screen and (max-width: 450px) {
   .bgcontact {
-    background-image: url("../img/cover-contacto-chico.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.381), rgba(0, 0, 0, 0.381)), url("../img/cover-contacto-chico.jpg");
     width: auto;
     height: 100%; } }
 
 @media screen and (max-width: 800px) {
-  .subcontacto h2 {
+  .bgcontact .agrupado .formularios .subcontacto h2 {
     font-size: 50px; } }
 
-@media screen and (max-width: 450px) {
-  .subcontacto h2 {
+@media screen and (max-width: 550px) {
+  .bgcontact .agrupado .formularios .subcontacto h2 {
     font-size: 35px; } }
 
 @media screen and (max-width: 650px) {
-  .mapita ul {
-    width: 90%; } }
+  .bgcontact .agrupado .mapita ul {
+    width: 80%; } }
 
 /*------------FOOTER MQ-------------*/
 @media screen and (max-width: 550px) {
