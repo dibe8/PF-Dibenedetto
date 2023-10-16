@@ -38,7 +38,7 @@
 @media screen and (max-width: 450px){
 
 .hero .display-3 p{
-    font-size: 20px;
+    font-size: nth($font-size, 6);
 }
 
 }
@@ -50,7 +50,7 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: nth($font-size, 7);
     background-color: black;
     padding: 5px;
     border: 2px solid white;
@@ -79,7 +79,7 @@
 @media screen and (max-width:650px){
 
     .subtitulo h2{
-        font-size: 20px;
+        font-size: nth($font-size, 6);
     }
 }
 
@@ -110,7 +110,7 @@
 
 @media screen and (max-width:450px){
     .paragraf p{
-        font-size: 15px;
+        font-size: nth($font-size, 3);
         justify-content: space-around;
     }
 }
@@ -135,9 +135,9 @@
 @media screen and (max-width:500px){
     .tituacordeon{
         h2{
-            font-size: 20px;
+            font-size: nth($font-size, 6);
             span{
-                font-size: 40px;
+                font-size: nth($font-size, 9);
             }
         }
     }
@@ -146,7 +146,7 @@
 @media screen and (max-width:500px){
     .tituacordeon{
         h2{
-            font-size: 18px;
+            font-size: nth($font-size, 5);
             span{
                 font-size: 35px;
             }
@@ -166,7 +166,7 @@
 
 @media screen and (max-width: 800px){
     .bgcontact .agrupado .formularios .subcontacto h2{
-        font-size: 50px;
+        font-size: nth($font-size, 10);
     }
 } 
 
@@ -201,6 +201,6 @@
     
 @media screen and (max-width: 550px){
     footer .derechos{
-        font-size: 10px;
+        font-size: nth($font-size, 1);
     }
 } 

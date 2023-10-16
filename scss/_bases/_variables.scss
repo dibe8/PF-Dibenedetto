@@ -1,3 +1,109 @@
+//! VARIABLES
+
+//*Son la manera que los programadores le dan nombre a un valor para poder reusarlo, actualizarlo o simplemente registrarlo
+//*Son reservadas en la memoria para almacenar datos (nos sirven para guardar información)
+
 $color-principal: #FFC107;
 $color-secundario: black;
 $color-terciario: white;
+
+//! LISTAS
+
+$colores:
+red,
+blue,
+tomato,
+gray,
+green,
+brown,
+yellow,
+violet;
+
+$font-size: 
+10px,
+12px,
+15px,
+17px,
+18px,
+20px,
+25px,
+30px,
+40px,
+50px,
+70px,
+80px;
+
+//! OPERACIONES
+// OPERADORES ARITMETICOS + - */
+
+$ancho: 1000px;
+
+//! MAPAS
+
+$boton:( 
+    fondo:black,
+    borde-boton: 2px solid black,
+    color-text: white,
+);
+
+//! EXTENDS
+// % Placeholder
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//! MIXINS
+
+//* @mixin flex{
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  }
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//! CONDICIONALES
+//OPERADORES DE COMPARACIÓN
+// = ---> ASIGNACIÓN
+// == ---> SON IGUALES
+// != ---> SON DIFERENTES
+// > ---> MAYOR QUE
+// < ---> MENOR QUE
+// >= ----> MAYOR O IGUAL
+// <= ----> MENOR O IGUAL
+
+/*if (CONDICIONAL){
+    SE EJECUTA ESTE CODIGO
+}else{
+    SE EJECUTA ESTE OTRO
+}*/
+
+@mixin modos ($darkmode){
+    @if $darkmode == black{
+        border-radius: solid 2px blueviolet;
+        background-color: black;
+        color: white;
+    }else{
+        border-radius: solid 2px rgb(226, 214, 43);
+        background-color: white;
+        color: black;
+    }
+}
+
+//! BUCLES
+
+@for $i from 1 through 6{
+    .nombreclase-#{$i}{
+        font-size: 24em / $i;
+    }
+}
+
+
+

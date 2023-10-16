@@ -140,12 +140,12 @@ header nav ul li{
 }
 .grid-item h2{
     font-weight: bold;
-    font-size: 20px;
+    font-size: nth($font-size, 6);
 }
 
 .grid-item h3{
     font-weight: bold;
-    font-size: 15px;
+    font-size: nth($font-size, 3);
 }
 
 .grid-item a{
@@ -171,7 +171,7 @@ header nav ul li{
     position: fixed;
     right: 50px;
     bottom: 70px;
-    font-size: 50px;
+    font-size: nth($font-size, 10);
     color: $color-secundario;
     z-index: 150;
     

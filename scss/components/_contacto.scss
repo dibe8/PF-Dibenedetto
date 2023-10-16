@@ -13,7 +13,7 @@
                 h2{
                     color: $color-terciario;
                     background-color: rgba(0, 0, 0, 0.562);
-                    font-size: 70px;
+                    font-size: nth($font-size, 12);
                     font-weight: bold;
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     display: flex;
@@ -25,16 +25,20 @@
                     font-weight: bold;
                     color: $color-secundario;
                     padding-left: 5px;
+                    
                     h3{
                         width: 290px;
                         background-color: rgba(0, 0, 0, 0.781);
-                        font-size: 20px;
+                        font-size: nth($font-size, 6);
                         color: $color-principal;
                         margin-top: 10px;
                         display: flex;
                         justify-content: start;
                         padding-left: 5px;
                         border-radius: 15px;
+                        &:hover{
+                            background-color: $color-secundario;
+                        }
                     }
                         
                     textarea{
@@ -46,10 +50,22 @@
                         border-radius: 15px;
                     }
             }
+                .elegir{
+                    background-color: rgba(0, 0, 0, 0.781);
+                    color: $color-principal;
+                    border-radius: 15px;
+                    margin-left: 25px;
+                    width: 250px;
+                    display: flex;
+                    justify-content: space-around;
+                    &:hover{
+                        color: $color-principal;
+                        background-color: $color-secundario;
+                    }
+                }
                 .titlecondicion{
                     h3{
-                        display: flex;
-                        justify-content: start;
+                        @include flex (flex, start, start);
                         padding-left:  5px;
                     }
                 }
@@ -135,7 +151,7 @@
                 justify-content: center;
                 span{
                     font-family: "amsterdam-four";
-                    font-size: 25px;
+                    font-size: nth($font-size, 7);
                     font-weight: bold;
                 }
             }
