@@ -50,8 +50,8 @@ header nav ul li{
 
 
 .navbar-brand img{
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
 }
 
 .collapse form input{
@@ -129,6 +129,8 @@ header nav ul li{
     max-width: 100%; /* Para que las imágenes sean responsivas */
 }
 
+
+
 .card img{
     width: 500px;
     height: 300px;
@@ -137,10 +139,11 @@ header nav ul li{
 .grid-item{
     align-content: center;
     flex-direction: column;
+    
 }
 .grid-item h2{
     font-weight: bold;
-    font-size: nth($font-size, 6);
+    font-size: nth($font-size, 9);
 }
 
 .grid-item h3{
@@ -150,13 +153,19 @@ header nav ul li{
 
 .grid-item a{
     text-decoration: none;
-    text-decoration: none;
     color: $color-secundario;
-    padding: 4px;
+    padding: 15px;
     border: 2px solid $color-secundario;
-    text-align: center;
+    display: flex;
+    
+    justify-content: center;
     
 
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
 }
 
 .grid-item:hover a{

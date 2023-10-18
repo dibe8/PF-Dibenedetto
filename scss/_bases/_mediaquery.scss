@@ -179,10 +179,24 @@
     }
 } 
 
+@media screen and (max-width:1200px){
+    .bgcontact .agrupado .mapita .map{
+        width: 600px;
+    }
+    
+}
 
 @media screen and (max-width:650px){
-    .bgcontact .agrupado .mapita ul{
-        width: 80%;
+    .bgcontact .agrupado .mapita{
+        width: 85%;
+        display: flex;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width:450px){
+    .bgcontact .agrupado .mapita{
+        width: 100%;
     }
 }
 
@@ -192,6 +206,7 @@
         
     }
 }
+
 
 
 /*------------FOOTER MQ-------------*/
@@ -207,4 +222,4 @@
     footer .derechos{
         font-size: nth($font-size, 1);
     }
-} 
+}

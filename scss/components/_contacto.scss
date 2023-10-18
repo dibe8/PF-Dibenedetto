@@ -120,10 +120,15 @@
             }
         }
     }
-    
+        
         .mapita{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
             margin-top: 10px;
             background-color: rgba(0, 0, 0, 0.562);
+            margin-bottom: 3px;
         }
         h3{
             background-color: rgba(0, 0, 0, 0.562);
@@ -133,13 +138,16 @@
             display: flex;
             justify-content: center;
         }
-        ul{
-            width: 600px;
-            border: 2px solid $color-terciario;
-            margin: 2px;
-            background-color: rgba(0, 0, 0, 0.822);
-            color: $color-principal;
-            li{
+            .map{
+                border: 5px solid black;
+            }
+            ul{
+                width: 600px;
+                border: 2px solid $color-terciario;
+                margin: 2px;
+                background-color: rgba(0, 0, 0, 0.822);
+                color: $color-principal;
+                li{
                 font-weight: bold;
                 color: $color-principal;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -148,16 +156,18 @@
                 padding: 10px;
                 background-color: rgba(0, 0, 0, 0.822);
             }
-            .titlelugar{
-                display: flex;
-                justify-content: center;
-                span{
-                    font-family: "amsterdam-four";
-                    font-size: nth($font-size, 7);
-                    font-weight: bold;
+                .titlelugar{
+                    display: flex;
+                    justify-content: center;
+                        span{
+                        font-family: "amsterdam-four";
+                        font-size: nth($font-size, 7);
+                        font-weight: bold;
+                    }
                 }
-            }
+            
         }
+        
     
 
         }

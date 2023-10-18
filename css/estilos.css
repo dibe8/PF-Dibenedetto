@@ -67,8 +67,8 @@ header nav ul li {
   background-color: black; }
 
 .navbar-brand img {
-  width: 180px;
-  height: 180px; }
+  width: 130px;
+  height: 130px; }
 
 .collapse form input {
   border-radius: 20px;
@@ -140,7 +140,7 @@ header nav ul li {
 
 .grid-item h2 {
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 40px; }
 
 .grid-item h3 {
   font-weight: bold;
@@ -148,11 +148,15 @@ header nav ul li {
 
 .grid-item a {
   text-decoration: none;
-  text-decoration: none;
   color: black;
-  padding: 4px;
+  padding: 15px;
   border: 2px solid black;
-  text-align: center; }
+  display: flex;
+  justify-content: center; }
+
+.centre {
+  display: flex;
+  justify-content: center; }
 
 .grid-item:hover a {
   background-color: black;
@@ -278,8 +282,15 @@ header nav ul li {
       height: 400px; }
     .beneficios .cards div h3 {
       text-align: center;
-      font-size: 17px;
-      font-weight: bold; }
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 10px; }
+    .beneficios .cards div .titu1 h3 {
+      font-size: 5px; }
+    .beneficios .cards div p {
+      display: flex;
+      justify-content: center;
+      padding: 12px; }
 
 .tituacordeon {
   background-color: #FFC107;
@@ -444,8 +455,13 @@ header nav ul li {
       background-color: black;
       color: #FFC107; }
   .bgcontact .agrupado .mapita {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.562); }
+    background-color: rgba(0, 0, 0, 0.562);
+    margin-bottom: 3px; }
   .bgcontact .agrupado h3 {
     background-color: rgba(0, 0, 0, 0.562);
     color: white;
@@ -453,6 +469,8 @@ header nav ul li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center; }
+  .bgcontact .agrupado .map {
+    border: 5px solid black; }
   .bgcontact .agrupado ul {
     width: 600px;
     border: 2px solid white;
@@ -621,9 +639,19 @@ footer .footersection .logiii img {
   .bgcontact .agrupado .formularios .subcontacto h2 {
     font-size: 35px; } }
 
+@media screen and (max-width: 1200px) {
+  .bgcontact .agrupado .mapita .map {
+    width: 600px; } }
+
 @media screen and (max-width: 650px) {
-  .bgcontact .agrupado .mapita ul {
-    width: 80%; } }
+  .bgcontact .agrupado .mapita {
+    width: 85%;
+    display: flex;
+    justify-content: start; } }
+
+@media screen and (max-width: 450px) {
+  .bgcontact .agrupado .mapita {
+    width: 100%; } }
 
 @media screen and (max-width: 500px) {
   .bgcontact .agrupado .formularios .container-fluid .leave textarea {
