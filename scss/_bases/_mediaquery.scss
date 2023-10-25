@@ -84,7 +84,7 @@
 }
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:991px){
 
     .paragraf img{
         width: 300px;
@@ -116,6 +116,18 @@
 }
 
 /*-------------MEDIAQUERY CARDS------*/
+
+@media screen and (max-width:600px){
+    .tituh2 h2{
+        font-size: nth($font-size, 3);
+        span{
+            font-size: 35px;
+        }
+    }    
+}        
+    
+
+
 
 @media screen and (max-width:850px){
     .beneficios .cards div{

@@ -151,8 +151,7 @@ header nav ul li {
   color: black;
   padding: 15px;
   border: 2px solid black;
-  display: flex;
-  justify-content: center; }
+  text-align: center; }
 
 .centre {
   display: flex;
@@ -578,7 +577,7 @@ footer .footersection .logiii img {
   .subtitulo h2 {
     font-size: 20px; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
   .paragraf img {
     width: 300px;
     height: 200px;
@@ -601,6 +600,12 @@ footer .footersection .logiii img {
     justify-content: space-around; } }
 
 /*-------------MEDIAQUERY CARDS------*/
+@media screen and (max-width: 600px) {
+  .tituh2 h2 {
+    font-size: 15px; }
+    .tituh2 h2 span {
+      font-size: 35px; } }
+
 @media screen and (max-width: 850px) {
   .beneficios .cards div {
     width: 300px;
