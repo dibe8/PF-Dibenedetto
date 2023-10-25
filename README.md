@@ -1,4 +1,4 @@
-<h1 align="center">Hola soy Ariel Gerardo Dibenedetto, o también "Dibe",tengo 32 años soy de Rosario, Argentina,</h1>
+<h1 align="center">Hola soy Ariel Gerardo Dibenedetto, o también "Dibe",tengo 32 años soy de Rosario, Argentina</h1>
 <h3 align="center">Metiendome en este apasionante mundo de la programación</h3>
 
 - 🔭 Actualmente estoy trabajando en [Automix multimarcas](https://automix.netlify.app/)
