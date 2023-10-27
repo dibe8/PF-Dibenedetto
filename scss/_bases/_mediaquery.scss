@@ -296,13 +296,18 @@
 
 @media screen and (max-width: 860px){
     .ahorasi .club-toyota .cont-parrafo{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
         
     }
     .ahorasi .club-toyota .cont-parrafo .taxt p{
-        padding-left: 15px;
-        padding-right: 20px;
-    }
+        display: flex;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+            
+        }
+    
 } 
 
 @media screen and (max-width: 700px){
@@ -336,32 +341,45 @@
     }
 } 
 
+@media screen and (max-width: 400px){
+    .club-to .titulin h3{
+        font-size: 14px;
+}
+}
 /*------------PEUGEOT MQ-------------*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .videitos .imgtext{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     .videitos .imgtext .separaparrafo p{
         margin-top: 15px;
     }
 
     .videitos .imgtext iframe{
+        width: 600px;
+        height: 315px;
         padding-left: 50px;
+        margin-bottom: 20px;
     }
 } 
 
 @media screen and (max-width: 680px){
     .videitos .imgtext iframe{
-        width: 400px;
-        padding-left: 50px;
+        width: 415px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     
 } 
 
+
 @media screen and (max-width: 420px){
     .videitos .imgtext iframe{
-        width: 350px;
-        padding-left: 50px;
+        width: 345px;
+        padding-left: 2px;
+        padding-right: 2px;
+
     }
     
 } 

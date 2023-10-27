@@ -26,14 +26,15 @@
     .imgtext{
         display: flex;
         justify-content: space-around;
+        
         iframe{
-            width: 600px;
-            height: 315px;
-            padding-left: 50px;
+            width: 1500px;
+            height: 420px;
+            padding-left: 20px;
         }
         p{
             padding-left: 20px;
-            padding-right: 80px;
+            padding-right: 40px;
         }
 
     }
