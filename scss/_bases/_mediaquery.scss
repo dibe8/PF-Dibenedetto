@@ -335,6 +335,36 @@
         margin-left: 40px;
     }
 } 
+
+/*------------PEUGEOT MQ-------------*/
+@media screen and (max-width: 800px){
+    .videitos .imgtext{
+        flex-direction: column;
+    }
+    .videitos .imgtext .separaparrafo p{
+        margin-top: 15px;
+    }
+
+    .videitos .imgtext iframe{
+        padding-left: 50px;
+    }
+} 
+
+@media screen and (max-width: 680px){
+    .videitos .imgtext iframe{
+        width: 400px;
+        padding-left: 50px;
+    }
+    
+} 
+
+@media screen and (max-width: 420px){
+    .videitos .imgtext iframe{
+        width: 350px;
+        padding-left: 50px;
+    }
+    
+} 
 /*------------FOOTER MQ-------------*/
 
 @media screen and (max-width: 550px){
