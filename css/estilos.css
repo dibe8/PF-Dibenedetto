@@ -1197,7 +1197,7 @@ footer .footersection .logiii img {
   .designer {
     align-items: center; }
   .calidad {
-    flex-direction: column; }
+    flex-direction: column-reverse; }
   .calidad .calidadexp p {
     display: flex;
     justify-content: center;
@@ -1227,7 +1227,7 @@ footer .footersection .logiii img {
   .seguridad {
     align-items: center; }
   .respambiental {
-    flex-direction: column; }
+    flex-direction: column-reverse; }
   .respambiental .expliq p {
     display: flex;
     justify-content: center;
