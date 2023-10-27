@@ -219,8 +219,122 @@
     }
 }
 
+/*--------MEDIAQUERY TOYOTA-------*/
+@media screen and (max-width: 1550px){
+    .toyotaxq .innovacion h3{
+        font-size: nth($font-size, 12);
+    }
+    .toyotaxq .durabilidad h3{
+        font-size: nth($font-size, 12)
+    }
 
+    .toyotaxq .seguridad h3{
+        font-size: nth($font-size, 12)
+    }
+    .toyotaxq .comodidad h3{
+        font-size: nth($font-size, 12)
+    }
+} 
 
+@media screen and (max-width: 1050px){
+    .toyotaxq .innovacion h3{
+        font-size: nth($font-size, 10);
+    }
+    .toyotaxq .durabilidad h3{
+        font-size: nth($font-size, 10)
+    }
+
+    .toyotaxq .seguridad h3{
+        font-size: nth($font-size, 10)
+    }
+    .toyotaxq .comodidad h3{
+        font-size: nth($font-size, 10)
+    }
+} 
+
+@media screen and (max-width: 650px){
+    .toyotaxq .innovacion h3{
+        font-size: nth($font-size, 8);
+        padding-left: 8px;
+    }
+    .toyotaxq .durabilidad h3{
+        font-size: nth($font-size, 8);
+        padding-right: 8px;
+    }
+
+    .toyotaxq .seguridad h3{
+        font-size: nth($font-size, 8);
+        padding-left: 8px;
+        
+    }
+    .toyotaxq .comodidad h3{
+        font-size: nth($font-size, 8);
+        padding-right: 8px;
+    }
+} 
+
+@media screen and (max-width: 450px){
+    .toyotaxq .innovacion h3{
+        font-size: nth($font-size, 7);
+        padding-left: 8px;
+    }
+    .toyotaxq .durabilidad h3{
+        font-size: nth($font-size, 7);
+        padding-right: 8px;
+    }
+
+    .toyotaxq .seguridad h3{
+        font-size: nth($font-size, 7);
+        padding-left: 8px;
+        
+    }
+    .toyotaxq .comodidad h3{
+        font-size: nth($font-size, 7);
+        padding-right: 8px;
+    }
+} 
+
+@media screen and (max-width: 860px){
+    .ahorasi .club-toyota .cont-parrafo{
+        flex-direction: column;
+        
+    }
+    .ahorasi .club-toyota .cont-parrafo .taxt p{
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+} 
+
+@media screen and (max-width: 700px){
+    .club-to .titulin h3{
+        font-size: nth($font-size, 6);
+    }
+} 
+
+@media screen and (max-width: 600px){
+    .ahorasi .club-toyota .cont-parrafo .immage img{
+        width: 400px;
+        height: 250px;
+        margin-left: 40px;
+    }
+} 
+
+@media screen and (max-width: 600px){
+    .club-to .titulin h3{
+        font-size: nth($font-size, 5);
+    }
+} 
+
+@media screen and (max-width: 450px){
+    .club-to .titulin h3{
+        font-size: nth($font-size, 4);
+    }
+    .ahorasi .club-toyota .cont-parrafo .immage img{
+        width: 300px;
+        height: 250px;
+        margin-left: 40px;
+    }
+} 
 /*------------FOOTER MQ-------------*/
 
 @media screen and (max-width: 550px){

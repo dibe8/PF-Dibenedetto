@@ -117,9 +117,14 @@
             margin-right: 5px;
             margin-left: 10px;
             margin-bottom: 5px;
-            box-shadow: 10px 7px 30px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 10px 7px 30px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 10px 7px 30px 0px rgba(0,0,0,0.75);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 10px 7px 30px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 7px 30px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 7px 30px 0px rgba(0,0,0,0.75);
+            }
+            
             
             img{
                 width: 396px;

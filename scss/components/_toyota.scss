@@ -14,7 +14,7 @@
 .imgtoyotas{
     width: 100%;
     img{
-        height: 500px;
+        height: 700px;
         z-index: 10;
         position: relative;
     }
@@ -43,5 +43,113 @@
             color: $color-terciario;
             transition: .5s;
         }
+    }
+}
+
+.toyotaxq{
+    .innovacion{
+        position: relative;
+        margin-bottom: 10px;
+        img{
+            width: 100%;
+            height: 500px;
+            
+            
+        }
+        h3{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding-left: 20px;
+            color: $color-terciario;
+            font-size: nth($font-size, 13);
+            background-color: rgba(0, 0, 0, 0.562);
+        }
+    }
+    .durabilidad{
+        position: relative;
+        margin-bottom: 10px;
+        img{
+            width: 100%;
+            height: 500px;
+        }
+        h3{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            padding-right: 20px;
+            position: absolute;
+            bottom: 0;
+            color: $color-terciario;
+            font-size: nth($font-size, 13);
+            background-color: rgba(0, 0, 0, 0.562);
+            
+        }
+    }
+    .seguridad{
+        position: relative;
+        margin-bottom: 10px;
+    
+        img{
+            width: 100%;
+            height: 500px;
+        }
+        h3{
+            width: 100%;
+            position: absolute;
+            padding-left: 20px;
+            bottom: 0;
+            color: $color-terciario;
+            font-size: nth($font-size, 13);
+            background-color: rgba(0, 0, 0, 0.562);
+        }
+    }
+    .comodidad{
+        position: relative;
+        margin-bottom: 5px;
+        img{
+            width: 100%;
+            height: 500px;
+        }
+        h3{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            position: absolute;
+            padding-right: 20px;
+            bottom: 0;
+            color: $color-terciario;
+            font-size: nth($font-size, 13);
+            background-color: rgba(0, 0, 0, 0.562);
+        }
+    }
+}
+
+.club-to{
+    .titulin{
+        h3{
+            display: flex;
+            justify-content: center;
+            background-color: $color-principal;
+            margin-top: 15px;
+        }
+    }
+}
+
+.ahorasi{
+    .club-toyota{
+        .cont-parrafo{
+            display: flex;
+            justify-content: space-around;
+            .taxt{
+                p{
+                    margin-top: 35px;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        
     }
 }
